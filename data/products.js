@@ -1,10 +1,10 @@
-import cars from '../cars.js';
-import rander from '../rander';
+import cars from '../data/cars.js';
+import rander from '../rander.js';
 
-const list = document.getElementById('Cars');
+const list = document.getElementById('cars');
 
 for(let i = 0; i < cars.length; i++) {
-    const cars = cars[i];
-    const dom = renderCars(cars);
+    const car = cars[i];
+    const dom = rander(car);
     list.appendChild(dom);
 };

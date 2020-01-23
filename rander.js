@@ -1,9 +1,8 @@
-import Cars from ".cars.js";
-import products from "./data/cars";
 
-function renderFruit(Cars) {
+
+function renderCars(Cars) {
     const li = document.createElement('li');
-    li.className = Cars.category;
+    li.textContent = Cars.description;
     li.title = Cars.description;
 
     const h3 = document.createElement('h3');
@@ -11,16 +10,14 @@ function renderFruit(Cars) {
     li.appendChild(h3);
 
     const img = document.createElement('img');
-    img.src = '../assets/' + Cars.image;
-    img.alt = Cars.name + ' image';
+    img.src = Cars.image;
+    img.alt = Cars.name + 'image';
     li.appendChild(img);
 
     const p = document.createElement('p');
     p.className = 'price';
 
-    const usd = '$' + Cars.price.toFixed(2);
-};
-    p.textContent = usd;
+    p.textContent = Cars.price
     
     const button = document.createElement('button');
     button.textContent = 'Add';
@@ -28,8 +25,8 @@ function renderFruit(Cars) {
     p.appendChild(button);
 
     li.appendChild(p);
+return li;
+};
 
-    return li;
 
-
-export default products;
+export default renderCars;

@@ -2,17 +2,13 @@ body {
     color: red;
     background-image: url(https://wallup.net/wp-content/uploads/2016/01/240217-car-Lamborghini_Aventador-Lamborghini-Dubai-748x468.jpg);
     text-align: center;
+    text-decoration: black;
 }
 
 h1 {
-    color:red;
+    color: black;
 }
  
   h2 {
-      color: red;
-}
-  img {
-      motion: auto;
-      box-shadow: cornsilk;
-      
-}
+      color: black;
+  }
