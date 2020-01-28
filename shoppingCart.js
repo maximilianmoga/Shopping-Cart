@@ -1,7 +1,6 @@
 import cars from './data/cars.js';
-import cart from './cart.js'
-
-import { findById, calcOrderTotal, toUSD } from 
+import cart from './cart.js';
+import { findById, calcOrderTotal, toUSD } from './commons/utils.js';
 import render from './rander.js';
 
 const tbody = document.querySelector('tbody');
